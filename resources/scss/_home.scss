@@ -1,0 +1,36 @@
+.home-hero-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.home-hero-text, .home-hero-text-secondary{
+    font-family: Lexend;
+    font-weight: 300;
+    font-size: clamp(7rem, 5vw, 98px);
+    line-height: 100%;
+    letter-spacing: -4%;
+    text-align: center;
+}
+
+.home-hero-text, .home-hero-text-secondary{
+    @media (max-width: 1024px) {
+        font-size: clamp(5rem, 5vw, 48px);
+    }
+}
+
+.home-hero-wrapper, .home-hero-img-wrapper {
+    margin-bottom: 32px!important;
+}
+
+// ------------------------------
+
+
+.home-hero-imgs-wrapper{
+    position: relative;
+}
+
+.hero-imgs-2{
+    position: absolute;
+}

@@ -1,0 +1,56 @@
+:root{
+    --bs-dark-rgb: 0, 0, 0;
+}
+
+*{
+    font-family: 'Lexend', Courier, monospace;
+}
+
+// ------------
+
+#offcanvasNavbarDark a.nav-link{
+    font-family: Lexend;
+    font-weight: 300;
+    font-size: 128px;
+    leading-trim: Cap height;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-decoration: none;
+}
+
+.active {
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-offset: 0%;
+    text-decoration-thickness: 0%;
+    text-decoration-skip-ink: auto;
+}
+
+.navbar-toggler{
+    border: none;
+}
+
+.header-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-buttons button{
+    font-family: Lexend;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+
+
+    border-radius: 0!important;
+
+    padding-top: 10px;
+    padding-right: 24px;
+    padding-bottom: 10px;
+    padding-left: 24px;
+}
