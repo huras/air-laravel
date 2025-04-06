@@ -5,9 +5,28 @@
     .fale-conosco{
         font-family: Lexend;
         font-weight: 300;
-        font-size: 150px;
+        font-size: 150px!important;
+
+        @media (max-width: 1024px) {
+            font-size: 80px !important;
+        }
+        @media (max-width: 768px) {
+            font-size: 64px !important;
+        }
+        @media (max-width: 425px) {
+            font-size: 48px !important;
+        }
+        @media (max-width: 375px) {
+            font-size: 44px !important;
+        }
+        @media (max-width: 320px) {
+            font-size: 36px !important;
+        }
+
+        font-family: Lexend;
         line-height: 100%;
         letter-spacing: -4%;
+
     }
 
     a {
@@ -26,5 +45,10 @@
 
     img {
         max-height: 32px;
+    }
+
+    p{
+        line-height: 1.25;
+        font-weight: 400;
     }
 }
