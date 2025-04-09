@@ -4,8 +4,13 @@
 
 @section('content')
     <section class="hero-section text-white bg-black">
-        <div class="container py-5 d-flex align-items-center">
-            <div class="row w-100 pt-5">
+        <div class="container-fluid pt-5">
+            <div class="row area-title-wrapper mt-5">
+                <p class="text-muted area-title-label">Soluções</p>
+            </div>
+        </div>
+        <div class="container d-flex align-items-center">
+            <div class="row w-100 ">
                 <div class="col-lg-12 col-md-12 d-flex flex-column justify-content-center text-center home-hero-wrapper">
                     <h1 class="fw-300 home-hero-text">Escalabilidade e resultados em Marketing de Influência.</h1>
                 </div>

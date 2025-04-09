@@ -53,27 +53,31 @@
             <div class="offcanvas-body">
                 <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="{{ route('home') }}">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Soluções</a>
+                        <a class="nav-link" href="{{ route('solucoes') }}">Soluções</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Sobre nós</a>
+                        <a class="nav-link" href="{{ route('sobre-nos') }}">Sobre nós</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Nossos parceiros</a>
+                        <a class="nav-link" href="{{ route('nossos-parceiros') }}">Nossos parceiros</a>
                     </li>
                     <li class="nav-item">
+                        {{-- Criar rota: Route::get('/cases', ...) --}}
                         <a class="nav-link" href="#">Cases</a>
                     </li>
                     <li class="nav-item">
+                        {{-- Criar rota: Route::get('/blog', ...) --}}
                         <a class="nav-link" href="#">Blog</a>
                     </li>
                     <li class="nav-item">
+                        {{-- Criar rota: Route::get('/contato', ...) --}}
                         <a class="nav-link" href="#">Contato</a>
                     </li>
                 </ul>
+
             </div>
         </div>
     </div>

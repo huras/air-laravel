@@ -1,30 +1,30 @@
-<footer class="footer-custom text-white py-5">
+<footer class="footer-custom @yield('footer-bg-theme', 'bg-black') @yield('footer-text-theme', 'text-white') py-5 mt-166">
     <div class="container-fluid px-4 pe-5">
         <h1 class="display-4 my-5 py-5 fale-conosco">Fale conosco</h1>
         <div class='my-5 py-5'></div>
         <div class="row pt-5 my-5">
             <div class="col-sm-12 col-md-4 col-lg-3 mb-4">
-                <p class="pe-5 fs-20 text-decoration-underline "><a href="#" class="text-white fw-normal">Central de Apoio</a>
+                <p class="pe-5 fs-20 text-decoration-underline "><a href="#" class="@yield('footer-text-theme', 'text-white') fw-normal">Central de Apoio</a>
                 </p>
-                <p class="pe-5 fs-20 text-light-emphasis small">
+                <p class="pe-5 fs-20 small @yield('footer-text-theme', 'text-white')">
                     Tem dúvidas técnicas, estratégicas ou financeiras? Converse com nosso time de especialistas e
                     explore nossa
-                    <a href="#" class="text-white text-decoration-underline">Central de Apoio aqui!</a>
+                    <a href="#" class="@yield('footer-text-theme', 'text-white') text-decoration-underline">Central de Apoio aqui!</a>
                 </p>
             </div>
             <div class="col-sm-12 col-md-4 col-lg-3 mb-4">
                 <p class="pe-5 fs-20 text-decoration-underline fw-normal">Novos clientes</p>
-                <p class="pe-5 fs-20 text-light-emphasis small">Clientes interessados em trabalhar com a gente.</p>
+                <p class="pe-5 fs-20 small @yield('footer-text-theme', 'text-white')">Clientes interessados em trabalhar com a gente.</p>
                 <p class="pe-5 fs-20 text-muted small">clientes@air.com.br</p>
             </div>
             <div class="col-sm-12 col-md-4 col-lg-3 mb-4">
-                <p class="pe-5 fs-20 text-decoration-underline fw-normal">Creators</p>
-                <p class="pe-5 fs-20 text-light-emphasis small">Ações com influenciadores, mídia kit, portfólio, parcerias.</p>
+                <p class="pe-5 fs-20 text-decoration-underline fw-normal @yield('footer-text-theme', 'text-white')">Creators</p>
+                <p class="pe-5 fs-20 small @yield('footer-text-theme', 'text-white')">Ações com influenciadores, mídia kit, portfólio, parcerias.</p>
                 <p class="pe-5 fs-20 text-muted small">creators@air.com.br</p>
             </div>
             <div class="col-sm-12 col-md-4 col-lg-3 mb-4">
-                <p class="pe-5 fs-20 text-decoration-underline fw-normal">RH</p>
-                <p class="pe-5 fs-20 text-light-emphasis small">
+                <p class="pe-5 fs-20 text-decoration-underline fw-normal @yield('footer-text-theme', 'text-white')">RH</p>
+                <p class="pe-5 fs-20 small @yield('footer-text-theme', 'text-white')">
                 <div>Para nos enviar seu perfil ou currículo, </div>
                 <div>inscreva-se em nosso banco de talentos.</div>
                 </p>
@@ -33,19 +33,19 @@
         </div>
         <div class="row pt-4 my-5">
             <div class="col-sm-12 col-md-4 col-lg-3 mb-4">
-                <p class="pe-5 fs-20 text-decoration-underline fw-normal">Imprensa</p>
-                <p class="pe-5 fs-20 text-light-emphasis small">Eventos, divulgações e notícias.</p>
+                <p class="pe-5 fs-20 text-decoration-underline fw-normal @yield('footer-text-theme', 'text-white')">Imprensa</p>
+                <p class="pe-5 fs-20 small @yield('footer-text-theme', 'text-white')">Eventos, divulgações e notícias.</p>
                 <p class="pe-5 fs-20 text-muted small">imprensa@air.com.br</p>
             </div>
             <div class="col-sm-12 col-md-4 col-lg-3 mb-4">
-                <p class="pe-5 fs-20 text-decoration-underline fw-normal">Mídia</p>
-                <p class="pe-5 fs-20 text-light-emphasis small">Veículos interessados em fornecer serviços de mídia para nossos
+                <p class="pe-5 fs-20 text-decoration-underline fw-normal @yield('footer-text-theme', 'text-white')">Mídia</p>
+                <p class="pe-5 fs-20 small @yield('footer-text-theme', 'text-white')">Veículos interessados em fornecer serviços de mídia para nossos
                     clientes.</p>
                 <p class="pe-5 fs-20 text-muted small">midia@air.com.br</p>
             </div>
             <div class="col-sm-12 col-md-4 col-lg-3 mb-4">
-                <p class="pe-5 fs-20 text-decoration-underline fw-normal">Redes sociais</p>
-                <ul class="list-unstyled text-muted small mb-0">
+                <p class="pe-5 fs-20 text-decoration-underline fw-normal @yield('footer-text-theme', 'text-white')">Redes sociais</p>
+                <ul class="list-unstyled text-muted small mb-0 ">
                     <li>Instagram</li>
                     <li>TikTok</li>
                     <li>Linkedin</li>
@@ -53,7 +53,7 @@
                 </ul>
             </div>
             <div class="col-sm-12 col-md-4 col-lg-3 mb-4">
-                <p class="pe-5 fs-20 text-decoration-underline fw-normal">Localização</p>
+                <p class="pe-5 fs-20 text-decoration-underline fw-normal @yield('footer-text-theme', 'text-white')">Localização</p>
                 <p class="pe-5 fs-20 text-muted small mb-0">
                     Avenida Eusébio Matoso, 690<br>
                     São Paulo, Brasil<br>
