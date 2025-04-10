@@ -1,4 +1,4 @@
-<footer class="footer-custom @yield('footer-bg-theme', 'bg-black') @yield('footer-text-theme', 'text-white') py-5 mt-166">
+<footer class="footer-custom @yield('footer-bg-theme', 'bg-black') @yield('footer-text-theme', 'text-white') py-5 pt-166">
     <div class="container-fluid px-4 pe-5">
         <h1 class="display-4 my-5 py-5 fale-conosco">Fale conosco</h1>
         <div class='my-5 py-5'></div>

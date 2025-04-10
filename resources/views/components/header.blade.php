@@ -66,7 +66,7 @@
                     </li>
                     <li class="nav-item">
                         {{-- Criar rota: Route::get('/cases', ...) --}}
-                        <a class="nav-link" href="#">Cases</a>
+                        <a class="nav-link" href="{{ route('cases-externa') }}">Cases</a>
                     </li>
                     <li class="nav-item">
                         {{-- Criar rota: Route::get('/blog', ...) --}}

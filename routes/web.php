@@ -18,3 +18,11 @@ Route::get('/sobre-nos', function () {
 Route::get('/nossos-parceiros', function () {
     return view('pages.nossos-parceiros');
 })->name('nossos-parceiros');
+
+Route::get('/cases-area-externa', function () {
+    return view('pages.cases-area-externa');
+})->name('cases-externa');
+
+Route::get('/cases-area-interna', function () {
+    return view('pages.case.cases-area-interna');
+})->name('cases-interna');
