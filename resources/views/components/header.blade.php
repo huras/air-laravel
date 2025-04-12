@@ -1,5 +1,5 @@
 <nav class="navbar navbar-dark bg-dark" aria-label="air">
-    <div class="container-fluid px-4">
+    <div class="container-fluid px-4 header-container">
         <a class="navbar-brand" href="#">
             <svg width="77" height="45" viewBox="0 0 77 45" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -13,17 +13,22 @@
             </svg>
         </a>
 
-
         <div class="d-flex flex-row justify-content-md-center header-buttons">
-            <button class="btn btn-light" type="button"
-                aria-label="Toggle navigation">
-                Sou Creator
-            </button>
+            <a href="#" class="btn btn-light" aria-label="Toggle navigation">
+                Plataforma AirSearch
+            </a>
 
-            <button class="btn btn-light" type="button"
-                aria-label="Toggle navigation">
-                Sou Assinante: Plataforma
-            </button>
+            <a href="#" class="btn btn-light" aria-label="Toggle navigation">
+                Campanhas Customizadas
+            </a>
+
+            <a href="#" class="btn btn-light" aria-label="Toggle navigation">
+                Insights
+            </a>
+
+            <a href="{{ route('sou-creator') }}" class="btn btn-light" aria-label="Toggle navigation">
+                Sou Creator
+            </a>
         </div>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
@@ -82,3 +87,8 @@
         </div>
     </div>
 </nav>
+
+
+@include('components.modal-contato-1')
+@include('components.modal-contato-2')
+@include('components.modal-central-apoio')

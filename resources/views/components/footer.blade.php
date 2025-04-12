@@ -4,12 +4,24 @@
         <div class='my-5 py-5'></div>
         <div class="row pt-5 my-5">
             <div class="col-sm-12 col-md-4 col-lg-3 mb-4">
-                <p class="pe-5 fs-20 text-decoration-underline "><a href="#" class="@yield('footer-text-theme', 'text-white') fw-normal">Central de Apoio</a>
+                <p class="pe-5 fs-20 text-decoration-underline">
+                    <span
+                        class="@yield('footer-text-theme', 'text-white') fw-normal"
+                    >
+                        Central de Apoio
+                    </span>
                 </p>
                 <p class="pe-5 fs-20 small @yield('footer-text-theme', 'text-white')">
                     Tem dúvidas técnicas, estratégicas ou financeiras? Converse com nosso time de especialistas e
                     explore nossa
-                    <a href="#" class="@yield('footer-text-theme', 'text-white') text-decoration-underline">Central de Apoio aqui!</a>
+                    <span
+                        href="#"
+                        class="@yield('footer-text-theme', 'text-white') text-decoration-underline cursor-pointer"
+                        data-bs-toggle="modal"
+                        data-bs-target="#supportCentralInicialModal"
+                    >
+                        Central de Apoio aqui!
+                    </span>
                 </p>
             </div>
             <div class="col-sm-12 col-md-4 col-lg-3 mb-4">

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ContactController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -26,3 +27,9 @@ Route::get('/cases-area-externa', function () {
 Route::get('/cases-area-interna', function () {
     return view('pages.case.cases-area-interna');
 })->name('cases-interna');
+
+Route::get('/sou-creator', function () {
+    return view('pages.sou-creator');
+})->name('sou-creator');
+
+Route::post('/contact/send', [ContactController::class, 'send'])->name('contact.send');
