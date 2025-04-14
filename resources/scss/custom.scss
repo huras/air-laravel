@@ -6,6 +6,15 @@
     font-family: 'Lexend', Courier, monospace;
 }
 
+.text-rainbow{
+    background: linear-gradient(to bottom, #8efff7, #fd75fd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* For Firefox */
+    background-clip: text;
+    color: transparent;
+}
+
 .fw-300{
     font-weight: 300!important;
 }
@@ -101,6 +110,11 @@
 
 .text-muted-2{
     color: #C3C3C3!important;
+    line-height: 1.25;
+}
+
+.text-muted-b0b0b0{
+    color: #B0B0B0!important;
     line-height: 1.25;
 }
 

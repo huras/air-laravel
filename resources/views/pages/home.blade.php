@@ -88,8 +88,7 @@
                 <div class="col-12 col-md-4 px-4">
                     <h5 class="fw-600">A gente cria. Ouve. Estuda. Analisa. Mede. Conecta.</h5>
                     <p class="text-muted mt-3">
-                        Fazemos com que as marcas falem de forma mais direta e honesta com seus consumidores, trazendo para
-                        essa conversa os criadores mais talentosos que o nosso país tem.
+                        Fazemos com que marcas se conectem diretamente aos seus consumidores, trazendo para essa conversa, os criadores que mais transformam em conversão para as marcas.
                     </p>
                 </div>
 
@@ -97,8 +96,7 @@
                 <div class="col-12 col-md-4 px-4">
                     <h5 class="fw-600">Aqui na AIR a gente acredita que criar impacto não é sorte — é método.</h5>
                     <p class="text-muted mt-3">
-                        A gente equilibra dados e sensibilidade, combinando inteligência com criatividade para entregar
-                        resultados que realmente fazem diferença.
+                        A gente combina inteligência com criatividade. O resultado: Impacto garantido!
                     </p>
                 </div>
 
@@ -106,54 +104,142 @@
                 <div class="col-12 col-md-4 px-4">
                     <h5 class="fw-600">Somos pioneiros. Somos inquietos.</h5>
                     <p class="text-muted mt-3">
-                        E para a gente isso é tudo. Tudo mesmo.
+                        E para a gente, trazer os melhores resultados para nossas marcas, é tudo. Tudo mesmo.
                     </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="my-5 py-5">
-        <div class="container my-5">
+    <section class="my-5 py-5 bg-black text-white">
+        <div class="container-fluid my-5">
             <!-- Bloco de introdução + comparação -->
-            <div class="row align-items-center mb-5">
-                <!-- Texto Esquerda -->
-                <div class="col-12 col-md-4 mb-4 mb-md-0">
-                    <h4 class="fw-bold">AIR: Resultados que superam expectativas e redefinem o mercado.</h4>
-                    <p class="text-muted mb-0">
-                        Conversas autênticas? Sim, a gente domina. Mas o nosso foco é no impacto real. A gente usa dados,
-                        inteligência e criatividade para entregar resultados que realmente fazem a diferença. E a gente não
-                        para até ver a sua marca no topo.
-                    </p>
-                </div>
+            <div class="row  mb-5">
 
                 <!-- Comparação Direita -->
-                <div class="col-12 col-md-6 mx-auto">
-                    <div class="row text-center">
-                        <!-- Cabeçalhos -->
-                        <div class="col-4"></div>
-                        <div class="col-4 fw-bold comparison-title">Mercado</div>
-                        <div class="col-4 fw-bold bg-black text-white comparison-title">Air</div>
-
-                        <!-- Linha 1 -->
-                        <div class="col-4 comparison-label d-flex flex-column">
-                            <div>Taxa</div>
-                            <div> de alcance</div>
+                <div class="col-12 col-md-4 mx-auto">
+                    <div class="d-flex flex-column justify-content-start align-items-start">
+                        <h3 class='text-rainbow'>Plataforma AirSearch</h3>
+                        <div class="d-flex justify-content-start align-items-end">
+                            <div class='text-white fw-300 me-2'>BY</div>
+                            <div>
+                                <img src="{{ asset('images/air.png') }}" alt="Air" class="img-fluid">
+                            </div>
                         </div>
-                        <div class="col-4 comparison-col">8%</div>
-                        <div class="col-4 comparison-col bg-black">19,8%</div>
 
-                        <!-- Linha 2 -->
-                        <div class="col-4 comparison-label second-row d-flex flex-column">
-                            <div>Taxa</div>
-                            <div> de cliques</div>
+                        <div class='my-5'>
+                            <h5 class='fw-300 text-white'>Tecnologia</h5>
+                            <p class='text-muted-b0b0b0'>Desbloqueie a influência que gera impacto e conecte-se já!</p>
                         </div>
-                        <div class="col-4 comparison-col comparison-table second-row">0,8%</div>
-                        <div class="col-4 comparison-col bg-black comparison-table second-row">1,1%</div>
+
+                        <div class='my-5'>
+                            <button type="button" class="btn btn-light">
+                                <span class="fw-600">Assine já!</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 mx-auto">
+                    <div class="d-flex flex-column justify-content-start align-items-start">
+                        <h3 class='text-rainbow'>Campanhas Customizadas</h3>
+                        <div class="d-flex justify-content-start align-items-end">
+                            <div class='text-white fw-300 me-2'>BY</div>
+                            <div>
+                                <img src="{{ asset('images/air.png') }}" alt="Air" class="img-fluid">
+                            </div>
+                        </div>
+
+                        <div class='my-5'>
+                            <h5 class='fw-300 text-white'>Agência</h5>
+                            <p class='text-muted-b0b0b0'>Lance sua campanha agora e veja seus resultados imediatos! Gerenciamento completo para você focar só no sucesso!</p>
+                        </div>
+
+                        <div class='my-5'>
+                            <button type="button" class="btn btn-light">
+                                <span class="fw-600">Fale com a gente</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 mx-auto">
+                    <div class="d-flex flex-column justify-content-start align-items-start">
+                        <h3 class='text-rainbow'>Insights</h3>
+                        <div class="d-flex justify-content-start align-items-end">
+                            <div class='text-white fw-300 me-2'>BY</div>
+                            <div>
+                                <img src="{{ asset('images/air.png') }}" alt="Air" class="img-fluid">
+                            </div>
+                        </div>
+
+                        <div class='my-5'>
+                            <h5 class='fw-300 text-white'>Insights</h5>
+                            <p class='text-muted-b0b0b0'>Deciframos oportunidades, analisamos a saúde da sua marca, qualificamos sua fun base.</p>
+                        </div>
+
+                        <div class='my-5'>
+                            <button type="button" class="btn btn-light">
+                                <span class="fw-600">Fale com a gente</span>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
 
+            <div class="row align-items-center mb-5">
+
+                <!-- Comparação Direita -->
+                <div class="col-12 col-md-4">
+                    <div class="d-flex flex-column justify-content-start align-items-start">
+                        <h3 class='text-rainbow'>Meu Air</h3>
+                        <div class="d-flex justify-content-start align-items-end">
+                            <div class='text-white fw-300 me-2'>BY</div>
+                            <div>
+                                <img src="{{ asset('images/air.png') }}" alt="Air" class="img-fluid">
+                            </div>
+                        </div>
+
+                        <div class='my-5'>
+                            <h5 class='fw-300 text-white'>Inteligência Artificial</h5>
+                            <p class='text-muted-b0b0b0'>Liberte o Potencial da sua Marca: Conecte-se diretamente com a influência que faz a diferença.</p>
+                        </div>
+
+                        <div class='my-5'>
+                            <button type="button" class="btn btn-light">
+                                <span class="fw-600">Descubra o poder da IA</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 mx-auto">
+                    <div class="d-flex flex-column justify-content-start align-items-start">
+                        <h3 class='text-rainbow'>Sou <br>Creator</h3>
+                        <div class="d-flex justify-content-start align-items-end">
+                            <div class='text-white fw-300 me-2'>BY</div>
+                            <div>
+                                <img src="{{ asset('images/air.png') }}" alt="Air" class="img-fluid">
+                            </div>
+                        </div>
+
+                        <div class='my-5'>
+                            <h5 class='fw-300 text-white'>Redes Sociais</h5>
+                            <p class='text-muted-b0b0b0'>Conecte suas redes sociais e descubra o poder da sua influência. Sua voz merece ser ouvida pelas marcas! </p>
+                        </div>
+
+                        <div class='my-5'>
+                            <button type="button" class="btn btn-light">
+                                <span class="fw-600">Fale com a gente</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4 mx-auto">
+                </div>
+
+            </div>
         </div>
     </section>
 
