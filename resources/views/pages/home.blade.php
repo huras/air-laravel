@@ -23,10 +23,10 @@
             <img src="{{ asset('images/home_bg_1.png') }}" alt="Air Logo Stroke" class="img-fluid w-100 hero-imgs-1">
             <img src="{{ asset('images/home_bg_2.png') }}" alt="Air Logo Stroke" class="img-fluid pe-4 w-100 hero-imgs-2">
 
-            <div class="container call-2 d-flex flex-column justify-content-center text-start home-hero-img-call">
+            {{-- <div class="container d-flex flex-column justify-content-center text-start">
                 <h2 class="fw-light">Respiramos</h2>
                 <h2 class="fw-light">influência.</h2>
-            </div>
+            </div> --}}
         </div>
     </section>
 
@@ -81,11 +81,11 @@
     </section>
 
     <section>
-        <div class="container-fluid text-black">
+        <div class="container-fluid text-black pb-5">
             <!-- Três Colunas -->
-            <div class="row g-4">
+            <div class="row g-4 pb-5">
                 <!-- Coluna 1 -->
-                <div class="col-12 col-md-4 px-4">
+                <div class="col-12 col-lg-4 col-md-6 col-sm-12 px-4">
                     <h5 class="fw-600">A gente cria. Ouve. Estuda. Analisa. Mede. Conecta.</h5>
                     <p class="text-muted mt-3">
                         Fazemos com que marcas se conectem diretamente aos seus consumidores, trazendo para essa conversa, os criadores que mais transformam em conversão para as marcas.
@@ -93,7 +93,7 @@
                 </div>
 
                 <!-- Coluna 2 -->
-                <div class="col-12 col-md-4 px-4">
+                <div class="col-12 col-lg-4 col-md-6 col-sm-12 px-4">
                     <h5 class="fw-600">Aqui na AIR a gente acredita que criar impacto não é sorte — é método.</h5>
                     <p class="text-muted mt-3">
                         A gente combina inteligência com criatividade. O resultado: Impacto garantido!
@@ -101,7 +101,7 @@
                 </div>
 
                 <!-- Coluna 3 -->
-                <div class="col-12 col-md-4 px-4">
+                <div class="col-12 col-lg-4 col-md-6 col-sm-12 px-4 mx-auto">
                     <h5 class="fw-600">Somos pioneiros. Somos inquietos.</h5>
                     <p class="text-muted mt-3">
                         E para a gente, trazer os melhores resultados para nossas marcas, é tudo. Tudo mesmo.
@@ -111,28 +111,36 @@
         </div>
     </section>
 
-    <section class="my-5 py-5 bg-black text-white">
-        <div class="container-fluid my-5">
+    <section class="py-5 bg-black text-white">
+        <div class="container py-5">
+            <h3> Nossas soluções </h3>
+            <p class="text-muted mt-3">
+                Reunimos especialistas para oferecer  criatividade disruptiva. Entregando integração com especialização profunda. É assim que nós fazemos.
+            </p>
+        </div>
+        <div class="container-fluid my-5 px-4">
             <!-- Bloco de introdução + comparação -->
-            <div class="row  mb-5">
+            <div class="row">
 
                 <!-- Comparação Direita -->
-                <div class="col-12 col-md-4 mx-auto">
+                <div class="col-12 col-lg-4 col-md-6 col-sm-12  mb-5">
                     <div class="d-flex flex-column justify-content-start align-items-start">
-                        <h3 class='text-rainbow'>Plataforma AirSearch</h3>
-                        <div class="d-flex justify-content-start align-items-end">
-                            <div class='text-white fw-300 me-2'>BY</div>
+                        <h3 class='text-rainbow'>Plataforma</h3>
+                        <h3 class='text-rainbow'>AirSearch</h3>
+                        <div class="d-flex justify-content-start align-items-end mt-3">
+                            <div class='text-white fw-300 me-2' style="line-height: 1;">BY</div>
                             <div>
-                                <img src="{{ asset('images/air.png') }}" alt="Air" class="img-fluid">
+                                <img src="{{ asset('images/air.png') }}" alt="Air" class="img-fluid" style="width: 51px">
                             </div>
                         </div>
 
                         <div class='my-5'>
                             <h5 class='fw-300 text-white'>Tecnologia</h5>
-                            <p class='text-muted-b0b0b0'>Desbloqueie a influência que gera impacto e conecte-se já!</p>
+                            <p class='text-muted-b0b0b0 my-0'>Desbloqueie a influência que gera impacto e</p>
+                            <p class='text-muted-b0b0b0 my-0'>conecte-se já!</p>
                         </div>
 
-                        <div class='my-5'>
+                        <div class='mb-5 mt-4'>
                             <button type="button" class="btn btn-light">
                                 <span class="fw-600">Assine já!</span>
                             </button>
@@ -140,22 +148,24 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-md-4 mx-auto">
+                <div class="col-12 col-lg-4 col-md-6 col-sm-12  mb-5">
                     <div class="d-flex flex-column justify-content-start align-items-start">
                         <h3 class='text-rainbow'>Campanhas Customizadas</h3>
-                        <div class="d-flex justify-content-start align-items-end">
-                            <div class='text-white fw-300 me-2'>BY</div>
+                        <div class="d-flex justify-content-start align-items-end mt-3">
+                            <div class='text-white fw-300 me-2' style="line-height: 1;">BY</div>
                             <div>
-                                <img src="{{ asset('images/air.png') }}" alt="Air" class="img-fluid">
+                                <img src="{{ asset('images/air.png') }}" alt="Air" class="img-fluid" style="width: 51px">
                             </div>
                         </div>
 
                         <div class='my-5'>
                             <h5 class='fw-300 text-white'>Agência</h5>
-                            <p class='text-muted-b0b0b0'>Lance sua campanha agora e veja seus resultados imediatos! Gerenciamento completo para você focar só no sucesso!</p>
+                            <p class='text-muted-b0b0b0 my-0'>Lance sua campanha agora e veja seus</p>
+                            <p class='text-muted-b0b0b0 my-0'>resultados imediatos! Gerenciamento completo</p>
+                            <p class='text-muted-b0b0b0 my-0'>para você focar só no sucesso!</p>
                         </div>
 
-                        <div class='my-5'>
+                        <div class='mb-5'>
                             <button type="button" class="btn btn-light">
                                 <span class="fw-600">Fale com a gente</span>
                             </button>
@@ -163,19 +173,20 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-md-4 mx-auto">
+                <div class="col-12 col-lg-4 col-md-6 col-sm-12  mb-5">
                     <div class="d-flex flex-column justify-content-start align-items-start">
                         <h3 class='text-rainbow'>Insights</h3>
-                        <div class="d-flex justify-content-start align-items-end">
-                            <div class='text-white fw-300 me-2'>BY</div>
+                        <div class="d-flex justify-content-start align-items-end mt-3">
+                            <div class='text-white fw-300 me-2' style="line-height: 1;">BY</div>
                             <div>
-                                <img src="{{ asset('images/air.png') }}" alt="Air" class="img-fluid">
+                                <img src="{{ asset('images/air.png') }}" alt="Air" class="img-fluid" style="width: 51px">
                             </div>
                         </div>
 
-                        <div class='my-5'>
+                        <div class='mb-5' style="margin-top: 102px">
                             <h5 class='fw-300 text-white'>Insights</h5>
-                            <p class='text-muted-b0b0b0'>Deciframos oportunidades, analisamos a saúde da sua marca, qualificamos sua fun base.</p>
+                            <p class='text-muted-b0b0b0 my-0'>Deciframos oportunidades, analisamos a saúde</p>
+                            <p class='text-muted-b0b0b0 my-0'>da sua marca, qualificamos sua fun base.</p>
                         </div>
 
                         <div class='my-5'>
@@ -185,27 +196,26 @@
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="row align-items-center mb-5">
 
                 <!-- Comparação Direita -->
-                <div class="col-12 col-md-4">
+                <div class="col-12 col-lg-4 col-md-6 col-sm-12  mb-5">
                     <div class="d-flex flex-column justify-content-start align-items-start">
-                        <h3 class='text-rainbow'>Meu Air</h3>
-                        <div class="d-flex justify-content-start align-items-end">
-                            <div class='text-white fw-300 me-2'>BY</div>
+                        <h3 class='text-rainbow'>IA Aira</h3>
+                        <div class="d-flex justify-content-start align-items-end mt-3">
+                            <div class='text-white fw-300 me-2' style="line-height: 1;">BY</div>
                             <div>
-                                <img src="{{ asset('images/air.png') }}" alt="Air" class="img-fluid">
+                                <img src="{{ asset('images/air.png') }}" alt="Air" class="img-fluid" style="width: 51px">
                             </div>
                         </div>
 
-                        <div class='my-5'>
+                        <div class='mb-5' style="margin-top: 128px">
                             <h5 class='fw-300 text-white'>Inteligência Artificial</h5>
-                            <p class='text-muted-b0b0b0'>Liberte o Potencial da sua Marca: Conecte-se diretamente com a influência que faz a diferença.</p>
+                            <p class='text-muted-b0b0b0 my-0'>Aira: Sua IA exclusiva para curadoria</p>
+                            <p class='text-muted-b0b0b0 my-0'>inteligente e eficiente de influenciadores.</p>
                         </div>
 
-                        <div class='my-5'>
+                        <div class='mb-5' style="margin-top: 69px">
                             <button type="button" class="btn btn-light">
                                 <span class="fw-600">Descubra o poder da IA</span>
                             </button>
@@ -213,19 +223,19 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-md-4 mx-auto">
+                <div class="col-12 col-lg-4 col-md-6 col-sm-12  mb-5">
                     <div class="d-flex flex-column justify-content-start align-items-start">
                         <h3 class='text-rainbow'>Sou <br>Creator</h3>
-                        <div class="d-flex justify-content-start align-items-end">
-                            <div class='text-white fw-300 me-2'>BY</div>
+                        <div class="d-flex justify-content-start align-items-end mt-3">
+                            <div class='text-white fw-300 me-2' style="line-height: 1;">BY</div>
                             <div>
-                                <img src="{{ asset('images/air.png') }}" alt="Air" class="img-fluid">
+                                <img src="{{ asset('images/air.png') }}" alt="Air" class="img-fluid" style="width: 51px">
                             </div>
                         </div>
 
                         <div class='my-5'>
                             <h5 class='fw-300 text-white'>Redes Sociais</h5>
-                            <p class='text-muted-b0b0b0'>Conecte suas redes sociais e descubra o poder da sua influência. Sua voz merece ser ouvida pelas marcas! </p>
+                            <p class='text-muted-b0b0b0 my-0'>Conecte suas redes sociais e descubra o poder da sua influência. Sua voz merece ser ouvida pelas marcas! </p>
                         </div>
 
                         <div class='my-5'>
@@ -236,11 +246,18 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-md-4 mx-auto">
+                <div class="col-12 col-md-4  mb-5">
                 </div>
 
             </div>
         </div>
     </section>
+
+    {{-- Raindom Block Text --}}
+    <x-rainbow-block-text
+        title="Quer se conectar com a gente?"
+        button-text="Entre em contato"
+        button-link="{{ route('contato') }}"
+    />
 
 @endsection

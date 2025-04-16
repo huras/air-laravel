@@ -32,4 +32,12 @@ Route::get('/sou-creator', function () {
     return view('pages.sou-creator');
 })->name('sou-creator');
 
+Route::get('/contato', function () {
+    return view('pages.contato');
+})->name('contato');
+
+Route::get('/my-air', function () {
+    return view('pages.my-air');
+})->name('my-air');
+
 Route::post('/contact/send', [ContactController::class, 'send'])->name('contact.send');

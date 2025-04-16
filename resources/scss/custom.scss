@@ -40,8 +40,14 @@
 .fs-16{
     font-size: 16px!important;
 }
+.fs-20{
+    font-size: 20px!important;
+}
 .fs-24{
     font-size: 24px!important;
+}
+.fs-150{
+    font-size: 150px!important;
 }
 
 .py-6{
@@ -75,17 +81,29 @@
 .mt-56{
     margin-top: 56px !important;
 }
+.mb-56{
+    margin-bottom: 56px !important;
+}
 .pt-56{
     margin-top: 56px !important;
 }
 .mt-80{
     margin-top: 80px !important;
 }
+.pt-80{
+    padding-top: 80px !important;
+}
 .mt-90{
     margin-top: 90px !important;
 }
 .pt-90{
     padding-top: 90px !important;
+}
+.pt-105{
+    padding-top: 105px !important;
+}
+.mt-160{
+    margin-top: 160px !important;
 }
 .mt-166{
     margin-top: 166px !important;
@@ -95,6 +113,9 @@
 }
 .mt-215{
     margin-top: 215px !important;
+}
+.mb-215{
+    margin-bottom: 215px !important;
 }
 .mt-370{
     margin-top: 370px !important;
@@ -108,12 +129,17 @@
     line-height: 1.25;
 }
 
-.text-muted-2{
+.text-muted-2, .text-muted-c3{
     color: #C3C3C3!important;
     line-height: 1.25;
 }
 
 .text-muted-b0b0b0{
+    color: #B0B0B0!important;
+    line-height: 1.25;
+}
+
+.text-muted-59{
     color: #B0B0B0!important;
     line-height: 1.25;
 }
@@ -256,6 +282,41 @@ h5 {
     line-height: 130%;
     letter-spacing: -1%;
 }
+
+// -----------------
+
+.h1-mobile {
+    @media (max-width: 425px) {
+        font-size: 48px !important;
+    }
+    @media (max-width: 375px) {
+        font-size: 44px !important;
+    }
+    @media (max-width: 320px) {
+        font-size: 36px !important;
+    }
+
+    font-family: Lexend;
+    line-height: 110%;
+    letter-spacing: -3%;
+}
+.h2-mobile {
+    @media (max-width: 425px) {
+        font-size: 40px !important;
+    }
+    @media (max-width: 375px) {
+        font-size: 36px !important;
+    }
+    @media (max-width: 320px) {
+        font-size: 32px !important;
+    }
+
+    font-family: Lexend;
+    line-height: 110%;
+    letter-spacing: -3%;
+}
+
+// -----------------
 
 p, .li-paragraph {
     font-size: 24px !important;

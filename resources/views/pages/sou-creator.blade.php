@@ -26,6 +26,7 @@
                 </div>
             </div>
         </div>
+
         <div class="container put-on-top-of-section">
             <div class="row">
                 <div class="col-lg-8 col-md-8 me-auto d-flex flex-column justify-content-center text-start">
@@ -33,7 +34,39 @@
                 </div>
             </div>
         </div>
+
+        <div class="container-fluid mt-80">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12 px-5">
+                    <h4 class='fw-600 text-rainbow'> Visibilidade </h4>
+                    <p class="text-white fs-20"> Conecte-se e tenha seu perfil disponível para milhares de empresas que procuram influenciadores como você. </p>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12 px-5">
+                    <h4 class='fw-600 text-rainbow'> Praticidade </h4>
+                    <p class="text-white fs-20"> A partir do momento em que seu perfil está em nossa base, você estará visível para empresas interessadas em colaborações e parcerias. </p>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12 px-5">
+                    <h4 class='fw-600 text-rainbow'> Destaque </h4>
+                    <p class="text-white fs-20"> Una-se à nossa empresa, com 15 anos de experiência no mercado e uma reputação sólida, conquistando a confiança de grandes clientes em busca de publicidade digital.  </p>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12 px-5">
+                    <h4 class='fw-600 text-rainbow'> Agilidade </h4>
+                    <p class="text-white fs-20"> Para entrar em nossa plataforma, é muito simples! Basta preencher seu cadastro e conectar suas redes sociais desejadas. </p>
+                </div>
+            </div>
+        </div>
     </section>
+
+    <section class="pt-105 bg-black">
+    </section>
+    <x-rainbow-block-text
+        title="Amplie sua chance de efetivar novos negócios!"
+        button-text="Ir para o Meu Air"
+        button-link="{{ route('my-air') }}"
+    />
 
     {{-- --------------------- --}}
 
@@ -41,8 +74,8 @@
         <div class="container">
             <!-- Título principal -->
             <div class="row align-items-center mb-5 mt-5">
-                <div class="col-lg-12 col-md-12 d-flex flex-column justify-content-center text-center home-hero-wrapper">
-                    <h1 class="fw-300 home-hero-text">Connect</h1>
+                <div class="col-lg-12 col-md-12 text-start">
+                    <h1 class="fw-500 text-rainbow">Connect</h1>
                 </div>
             </div>
         </div>
@@ -55,17 +88,37 @@
                 </div>
 
                 <div class="col-12 col-md-6 mb-5 mb-md-0 fw-300 align-items-start">
-                    <h5 class="mb-3 fw-300 pe-2">Pensado exclusivamente para Creators. Seu talento, sua vitrine!</h5>
-                    <p class="text-muted-2 mb-4">
-                        Liberte o poder da sua influência. Através do Connect seu Mídia Kit torna-se o portal para conexões autênticas com grandes marcas, com insights valiosos sobre sua audiência.
+                    <h5 class="mb-3 fw-300 pe-2">Seu talento, sua vitrine!</h5>
+                    <p class="text-muted-c3">
+                        Temos novidades: <b class='fw-700 text-white'> uma marca demonstrou interesse em perfis como o seu para uma campanha incrível!</b>
                         <br><br>
-                        Transforme sua visibilidade em oportunidades reais e construa parcerias que geram impacto de verdade.
+                        Mas para ser notado, é preciso estar com o Instagram conectado.
+                        Ao conectar, você ativa:
                         <br><br>
-                        Conecte suas redes sociais e descubra o futuro da influência! Conecte-se à Air e descubra o poder da sua audiência. Publis e parcerias, que se transformam em oportunidades reais.
+
+                        <div>
+                            <li class="fw-300 text-muted-c3 li-paragraph">
+                                Um mídia kit <b class="fw-600 text-white">atualizado automaticamente com suas métricas</b>.
+                            </li>
+                            <li class="fw-300 text-muted-c3 li-paragraph">
+                                Seu perfil, <b class="fw-600 text-white">será visível para grandes marcas</b>, ampliando suas possibilidades de fechar uma campanha real.
+                            </li>
+                            <li class="fw-300 text-muted-c3 li-paragraph">
+                                <b class="fw-600 text-white">Vitrine de oportunidades:</b> para você escolher as publis que mais se alinham ao seu perfil e autenticidade.
+                            </li>
+                        </div>
                     </p>
                 </div>
             </div>
+        </div>
 
+        <x-rainbow-block-text
+            title="Transforme audiência em oportunidades reais!"
+            button-text="Faça agora o Connect"
+            button-link="{{ route('my-air') }}"
+        />
+
+        <div class="container-fluid">
             <!-- Segunda linha: lista de benefícios + imagem da mulher -->
             <div class="row align-items-start mb-5 plataforma column-reverse-mobile">
                 <div class="col-12 col-md-6 mb-5 mb-md-0 fw-300">
