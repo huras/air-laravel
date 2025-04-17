@@ -40,4 +40,8 @@ Route::get('/my-air', function () {
     return view('pages.my-air');
 })->name('my-air');
 
+Route::get('/privacy-policy', function () {
+    return view('pages.privacy-policy');
+})->name('privacy-policy');
+
 Route::post('/contact/send', [ContactController::class, 'send'])->name('contact.send');

@@ -27,12 +27,12 @@
             <div class="col-sm-12 col-md-4 col-lg-3 mb-4">
                 <p class="pe-5 fs-20 text-decoration-underline fw-normal">Novos clientes</p>
                 <p class="pe-5 fs-20 small @yield('footer-text-theme', 'text-black')">Clientes interessados em trabalhar com a gente.</p>
-                <p class="pe-5 fs-20 text-muted-59 small">clientes@air.com.br</p>
+                <p class="pe-5 fs-20 text-muted-59-if-not-bg-white small">clientes@air.com.br</p>
             </div>
             <div class="col-sm-12 col-md-4 col-lg-3 mb-4">
                 <p class="pe-5 fs-20 text-decoration-underline fw-normal @yield('footer-text-theme', 'text-black')">Creators</p>
                 <p class="pe-5 fs-20 small @yield('footer-text-theme', 'text-black')">Ações com influenciadores, mídia kit, portfólio, parcerias.</p>
-                <p class="pe-5 fs-20 text-muted-59 small">creators@air.com.br</p>
+                <p class="pe-5 fs-20 text-muted-59-if-not-bg-white small">creators@air.com.br</p>
             </div>
             <div class="col-sm-12 col-md-4 col-lg-3 mb-4">
                 <p class="pe-5 fs-20 text-decoration-underline fw-normal @yield('footer-text-theme', 'text-black')">RH</p>
@@ -40,33 +40,33 @@
                 <div>Para nos enviar seu perfil ou currículo, </div>
                 <div>inscreva-se em nosso banco de talentos.</div>
                 </p>
-                <p class="pe-5 fs-20 text-muted-59 small">bancodetalentos@air.com.br</p>
+                <p class="pe-5 fs-20 text-muted-59-if-not-bg-white small">bancodetalentos@air.com.br</p>
             </div>
         </div>
         <div class="row pt-4 my-5">
             <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
                 <p class="pe-5 fs-20 text-decoration-underline fw-normal @yield('footer-text-theme', 'text-black')">Imprensa</p>
                 <p class="pe-5 fs-20 small @yield('footer-text-theme', 'text-black')">Eventos, divulgações e notícias.</p>
-                <p class="pe-5 fs-20 text-muted-59 small">imprensa@air.com.br</p>
+                <p class="pe-5 fs-20 text-muted-59-if-not-bg-white small">imprensa@air.com.br</p>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
                 <p class="pe-5 fs-20 text-decoration-underline fw-normal @yield('footer-text-theme', 'text-black')">Mídia</p>
                 <p class="pe-5 fs-20 small @yield('footer-text-theme', 'text-black')">Veículos interessados em fornecer serviços de mídia para nossos
                     clientes.</p>
-                <p class="pe-5 fs-20 text-muted-59 small">midia@air.com.br</p>
+                <p class="pe-5 fs-20 text-muted-59-if-not-bg-white small">midia@air.com.br</p>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
                 <p class="pe-5 fs-20 text-decoration-underline fw-normal @yield('footer-text-theme', 'text-black')">Redes sociais</p>
-                <ul class="list-unstyled text-muted-59 small mb-0 ">
-                    <li>Instagram</li>
-                    <li>TikTok</li>
-                    <li>Linkedin</li>
-                    <li>Youtube</li>
+                <ul class="list-unstyled fs-20 text-muted-59-if-not-bg-white small mb-0 ">
+                    <li class='line-height-1'> <a href="https://www.instagram.com/air.com.vc/" target="_blank" class='text-decoration-none @yield('footer-text-theme', 'text-black') text-muted-59-if-not-bg-white'> Instagram </a> </li>
+                    <li class='line-height-1'> <a href="https://www.tiktok.com/@air.com.vc" target="_blank" class='text-decoration-none @yield('footer-text-theme', 'text-black') text-muted-59-if-not-bg-white'> TikTok</a></li>
+                    <li class='line-height-1'> <a href="https://www.linkedin.com/company/air-com-vc/?viewAsMember=true" target="_blank" class='text-decoration-none @yield('footer-text-theme', 'text-black') text-muted-59-if-not-bg-white'> Linkedin</a></li>
+                    <li class='line-height-1'> <a href="https://www.youtube.com/@aircomvc" target="_blank" class='text-decoration-none @yield('footer-text-theme', 'text-black') text-muted-59-if-not-bg-white'> Youtube</a></li>
                 </ul>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-3 mb-4">
                 <p class="pe-5 fs-20 text-decoration-underline fw-normal @yield('footer-text-theme', 'text-black')">Localização</p>
-                <p class="pe-5 fs-20 text-muted-59 small mb-0">
+                <p class="pe-5 fs-20 text-muted-59-if-not-bg-white small mb-0">
                     Avenida Eusébio Matoso, 690<br>
                     São Paulo, Brasil<br>
                     05423-000<br>
@@ -80,7 +80,7 @@
                 <p class="pe-5 fs-20 small mb-0">&copy; Todos os direitos reservados. Air&reg; 2025.</p>
             </div>
             <div class="col text-md-center">
-                <a href="#" class="text-black small me-3">Política de Privacidade</a>
+                <a href="{{ route('privacy-policy') }}" class="text-black small me-3">Política de Privacidade</a>
                 <a href="#" class="text-black small">Termos de Uso</a>
             </div>
             <div class="col text-md-end">

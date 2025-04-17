@@ -12,8 +12,7 @@
         <div class="container d-flex align-items-center">
             <div class="row w-100">
                 <div class="col-lg-8 col-md-8 d-flex flex-column justify-content-center text-start mb-5">
-                    <h5 class="fw-300">C6 BANK</h5>
-                    <h3 class="fw-500"> Always On </h3>
+                    <h3 class="fw-500">C6 BANK</h3>
                 </div>
             </div>
         </div>
@@ -27,10 +26,8 @@
         <div class="container">
             <div class="row ">
                 <div class="col-12">
-                    <h3 class="fw-500 pt-5 pb-2">Overview</h3>
-                    <h5 class="fw-300 text-muted">Lorem ih5sum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                        ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <h3 class="fw-500 pt-5 pb-2">Objetivo</h3>
+                    <h5 class="fw-300 text-muted">Construir uma comunicação autêntica com diferentes públicos e converter o engajamento da audiência em novas contas.</p>
                 </div>
             </div>
         </div>
@@ -102,14 +99,14 @@
 
     <div class="container">
         <div class="row mb-5 mt-80">
-            <div class="col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12 me-auto">
+            <div class="col-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 me-auto">
                 <h5> Diferencial Airfluencers </h5>
-                <p class='text-muted'> Além de impulsionar o awareness da marca, o engajamento dos influenciadores converteu-se diretamente em novas contas abertas, validando a estratégia da Airfluencers como um dos principais motores de aquisição digital do C6 Bank​. </p>
+                <p class='text-muted'> Além de impulsionar o awareness da marca, o engajamento dos influenciadores converteu-se diretamente em novas contas abertas, validando a estratégia da Airfluencers como um dos principais motores de aquisição digital do C6 Bank. </p>
             </div>
         </div>
     </section>
 
-    <section class="text-black bg-white mt-90">
+    {{-- <section class="text-black bg-white mt-90">
         <div class="container">
             <div class="row ">
                 <div class="col-12 my-5"><h3> Veja os vídeos da campanha </h3></div>
@@ -118,29 +115,34 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
 
     <section class="text-white bg-black mt-90 pt-5">
         <div class="container-fluid">
             <div class="row">
-                <p class="text-muted ">Ver outros</p>
+                <p class="text-muted-b0 fw-300">VER OUTROS</p>
             </div>
         </div>
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-6">
-                    <div>
-                        <a href="{{ route('cases-interna') }}"> <img src="{{ asset('images/cases/airb&b.png') }}" class="img-fluid hero-logo mb-3"> </a>
-                    </div>
+            <div class="row align-items-start">
+                <div class="col-3 mt-32">
+                    <a href="{{ route('cases-interna', ['case' => 'airbnb']) }}" class='external_cases_slot'>
+                        <img src="{{ asset('images/cases_externa/airbnb_bg.png') }}" class="img-fluid background">
+                        <img src="{{ asset('images/cases_externa/airbnb_text.png') }}" class="img-fluid logo">
+                    </a>
                 </div>
 
-                <div class="col-3 me-auto">
-                    <a href="{{ route('cases-interna') }}" class="text-decoration-none">
-                        <h5 class="mb-0 fw-500 text-muted"> AIRBNB </h5>
+                <div class="col-3 mt-32">
+                    <a href="{{ route('cases-interna', ['case' => 'catarina']) }}" class='external_cases_slot'>
+                        <img src="{{ asset('images/cases_externa/catarina_bg.png') }}" class="img-fluid background">
+                        <img src="{{ asset('images/cases_externa/catarina_text.png') }}" class="img-fluid logo">
+                    </a>
+                </div>
 
-                        <h3 class="mb-0 fw-500 text-white">
-                            Trusted Voices 2024
-                        </h3>
+                <div class="col-3 mt-32">
+                    <a href="{{ route('cases-interna', ['case' => 'fgv']) }}" class='external_cases_slot'>
+                        <img src="{{ asset('images/cases_externa/fgv_bg.png') }}" class="img-fluid background">
+                        <img src="{{ asset('images/cases_externa/fgv_text.png') }}" class="img-fluid logo">
                     </a>
                 </div>
             </div>

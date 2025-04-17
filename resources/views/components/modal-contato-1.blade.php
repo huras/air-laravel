@@ -1,6 +1,6 @@
 <!-- Modal -->
 <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
         <div class="modal-content p-0 border-radius-0">
 
             <!-- Modal Header -->
@@ -11,9 +11,9 @@
 
             <!-- Modal Body -->
             <div class="modal-body pt-0">
-                <p class="text-black fs-16">
-                    <strong>Preencha os campos abaixo e aguarde um dos nossos consultores entrar em contato.</strong>
-                    Um dos nossos consultores entrará em contato o mais breve possível.
+                <p class="text-black fs-16 fw-300">
+                    <strong class='fw-800'>Preencha os campos abaixo</strong>
+                    e aguarde um dos nossos consultores entrar em contato.
                 </p>
 
                 <form action="{{ route('contact.send') }}" method="POST" class='mt-24'>
@@ -23,64 +23,32 @@
                             <input type="text" name="name" class="form-control" placeholder="*Nome" required>
                         </div>
                         <div class="col-md-6">
-                            <input type="text" name="company" class="form-control" placeholder="*Empresa" required>
+                            <input type="email" name="email" class="form-control" placeholder="*Email" required>
                         </div>
                         <div class="col-md-6">
                             <select name="role" class="form-select" required>
-                                <option value="ceo">Sócio(a) / CEO / Proprietário</option>
-                                <option value="diretor-vendas">Diretor(a) de vendas</option>
-                                <option value="diretor-marketing">Diretor(a) de Marketing</option>
-                                <option value="diretor-outras">Diretor(a) de Outras Áreas</option>
-                                <option value="gerente-marketing">Gerente de Marketing</option>
-                                <option value="gerente-vendas">Gerente de Vendas</option>
-                                <option value="coordenador-marketing">Coordenador(a)/Supervisor(a) de Marketing</option>
-                                <option value="coordenador-vendas">Coordenador(a)/Supervisor(a) de Vendas</option>
-                                <option value="assistente-marketing">Analista/Assistente de Marketing</option>
-                                <option value="assistente-vendas">Analista/Assistente de Vendas</option>
-                                <option value="vendedor">Vendedor(a) / Executivo(a) de Contas</option>
-                                <option value="estudante">Estudante</option>
-                                <option value="outros">Outros Cargos</option>
+                                <option value="agencia">Agência</option>
+                                <option value="marca">Marca</option>
+                                <option value="creator">Creator</option>
                             </select>
                         </div>
                         <div class="col-md-6">
-                            <input type="text" name="phone" class="form-control" placeholder="*Qual seu telefone/whatsapp" required>
+                            <input type="text" name="phone" class="form-control" placeholder="*Telefone/Whatsapp" required>
                         </div>
-                        <div class="col-md-6">
-                            <input type="email" name="email" class="form-control" placeholder="*E-mail corporativo" required>
-                        </div>
-                        <div class="col-md-6">
-                            <input type="text" name="website" class="form-control" placeholder="*Site da empresa" required>
-                        </div>
-                        <div class="col-md-6">
-                            <select name="segment" class="form-select" required>
-                                <option value="agronegocio">Agronegócio</option>
-                                <option value="consultoria">Consultorias e Treinamentos</option>
-                                <option value="ecommerce">Ecommerce</option>
-                                <option value="educacao">Educação e Ensino</option>
-                                <option value="marketing-publicidade">Agência de Marketing e Publicidade</option>
-                                <option value="engenharia">Engenharia e Indústria Geral</option>
-                                <option value="eventos">Eventos</option>
-                                <option value="juridico-financeiro">Financeiro, Jurídico e Serviços Relacionados</option>
-                                <option value="governo">Governo e Órgãos Públicos</option>
-                                <option value="hardware-eletronicos">Hardware e Eletrônicos</option>
-                                <option value="imobiliario">Imobiliários</option>
-                                <option value="midia-comunicacao">Mídia e Comunicação</option>
-                                <option value="ongs">ONGs</option>
-                                <option value="saude-estetica">Saúde e Estática</option>
-                                <option value="seguros">Seguros</option>
-                                <option value="servicos-geral">Serviços em Geral</option>
-                                <option value="rh-coaching">Serviços em RH e Coaching</option>
-                                <option value="software-cloud">Software e Cloud</option>
-                                <option value="telecomunicacoes">Telecomunicações</option>
-                            </select>
-                        </div>
-                        <div class="col-md-6">
-                            <input type="number" name="employees" class="form-control" placeholder="*Número de funcionários" required>
-                        </div>
+
                         <div class="col-12 text-area-with-counter">
-                            <textarea name="message" class="form-control" rows="8" maxlength="400" placeholder="Mensagem (opcional)"></textarea>
-                            <span class="text-muted fs-12 text-area-counter">0/400</span>
-                            <small class="">*Preenchimento obrigatório</small>
+                            <textarea name="message" class="form-control" rows="8" maxlength="400" placeholder="Mensagem" required oninput="
+                                const textArea = this;
+                                const counter = document.getElementById('message-text-area-counter');
+                                const maxLength = textArea.getAttribute('maxlength');
+                                const currentLength = textArea.value.length;
+                                counter.textContent = `${currentLength}/${maxLength}`;
+                                if (currentLength > maxLength) {
+                                    textArea.value = textArea.value.substring(0, maxLength);
+                                    counter.textContent = `${maxLength}/${maxLength}`;
+                                }"></textarea>
+                            <span id='message-text-area-counter' class="text-muted fs-12 text-area-counter">0/400</span>
+                            <small class="fw-300">*Preenchimento obrigatório</small>
                         </div>
                     </div>
 
@@ -111,19 +79,20 @@
 
 <script>
     document.addEventListener("DOMContentLoaded", function () {
-        $('#contactModal select[name=segment]').select2({
+        $('#contactModal select[name=role]').select2({
+            // dropdownParent: $('#contactModal .modal-dialog'),
             dropdownParent: $('#contactModal'),
             minimumResultsForSearch: Infinity,
-            placeholder: "*Segmento da empresa",
+            placeholder: "*Agência/Marca/Creator",
             allowClear: true
         });
 
-        $('#contactModal select[name=role]').select2({
-            dropdownParent: $('#contactModal'),
-            minimumResultsForSearch: Infinity,
-            placeholder: "*Cargo na empresa",
-            allowClear: true
-        });
+        // $('#contactModal select[name=role]').select2({
+        //     dropdownParent: $('#contactModal'),
+        //     minimumResultsForSearch: Infinity,
+        //     placeholder: "*Cargo na empresa",
+        //     allowClear: true
+        // });
 
         const selects = document.querySelectorAll('#contactModal select');
         selects.forEach(select => {

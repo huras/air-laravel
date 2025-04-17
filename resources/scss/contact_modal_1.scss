@@ -8,7 +8,7 @@
     input,textarea,select {
         border-color: #000;
         font-weight: 300;
-        border-radius: 4px;
+        border-radius: 0px;
     }
 
     select {
@@ -16,7 +16,7 @@
         font-size: 16px;
         font-weight: 300;
         font-family: 'Lexend', sans-serif;
-        border-radius: 4px;
+        border-radius: 0px!important;
 
         option {
             padding: 10px;  /* Not fully supported in all browsers, but helps */
@@ -31,6 +31,7 @@
     .select2-container--default .select2-selection--single{
         box-shadow: none;
         border-color: #333;
+        border-radius: 0px!important;
 
     }
 

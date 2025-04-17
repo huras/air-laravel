@@ -78,6 +78,12 @@
 .mt-32{
     margin-top: 32px !important;
 }
+.mt-40{
+    margin-top: 40px !important;
+}
+.mt-48{
+    margin-top: 48px !important;
+}
 .mt-56{
     margin-top: 56px !important;
 }
@@ -85,7 +91,10 @@
     margin-bottom: 56px !important;
 }
 .pt-56{
-    margin-top: 56px !important;
+    padding-top: 56px !important;
+}
+.pt-64{
+    padding-top: 64px !important;
 }
 .mt-80{
     margin-top: 80px !important;
@@ -102,6 +111,12 @@
 .pt-105{
     padding-top: 105px !important;
 }
+.pt-122{
+    padding-top: 122px !important;
+}
+.pt-160{
+    padding-top: 160px !important;
+}
 .mt-160{
     margin-top: 160px !important;
 }
@@ -111,8 +126,14 @@
 .pt-166{
     padding-top: 166px !important;
 }
+.pt-180{
+    padding-top: 180px !important;
+}
 .mt-215{
     margin-top: 215px !important;
+}
+.pt-215{
+    padding-top: 215px !important;
 }
 .mb-215{
     margin-bottom: 215px !important;
@@ -134,18 +155,30 @@
     line-height: 1.25;
 }
 
-.text-muted-b0b0b0{
+.text-muted-b0b0b0, .text-muted-b0{
     color: #B0B0B0!important;
     line-height: 1.25;
 }
 
 .text-muted-59{
-    color: #B0B0B0!important;
+    color: #595959!important;
+    line-height: 1.25;
+}
+.bg-black .text-muted-59-if-not-bg-white {
+    color: #595959!important;
+    line-height: 1.25;
+}
+
+.text-muted-4b{
+    color: #4B4B4B!important;
     line-height: 1.25;
 }
 
 .line-height-1{
     line-height: 1.25!important;
+}
+.line-height-15{
+    line-height: 1.5!important;
 }
 
 .article-link{
@@ -170,6 +203,10 @@
 
 h1 {
     font-size: 128px !important;
+    &.fs-120{
+        font-size: 116px !important;
+    }
+
     @media (max-width: 1024px) {
         font-size: 80px !important;
     }
@@ -400,7 +437,19 @@ p, .li-paragraph {
         top: 0;
         left: 0;
         color: #A6A6A6;
-        transform: translateY(100%);
+        transform: translateY(80%);
+
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
+
+    .area-title-label-2{
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: #A6A6A6;
+        transform: translateY(-100%);
 
         @media (max-width: 768px) {
             display: none;
@@ -466,5 +515,29 @@ p, .li-paragraph {
 .column-reverse-mobile {
     @media (max-width: 768px) {
         flex-direction: column-reverse;
+    }
+}
+
+// ----------------
+
+.external_cases_slot {
+    position: relative;
+    .background{
+        filter: blur(6px) brightness(0.7);
+        transition: filter 0.3s ease-in-out;
+    }
+    .logo{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 50%;
+    }
+
+    &:hover{
+        .background{
+            filter: blur(0px) brightness(1);
+            transition: filter 0.3s ease-in-out;
+        }
     }
 }

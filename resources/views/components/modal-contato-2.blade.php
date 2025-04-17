@@ -1,6 +1,6 @@
 <!-- Modal -->
 <div class="modal fade" id="supportCentralModal" tabindex="-1" aria-labelledby="supportCentralModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
         <div class="modal-content p-0 border-radius-0">
 
             <!-- Modal Header -->
@@ -38,7 +38,7 @@
                         <div class="col-12 text-area-with-counter">
                             <textarea name="message" class="form-control" rows="8" maxlength="400" placeholder="Assunto"></textarea>
                             <span class="text-muted fs-12 text-area-counter">0/400</span>
-                            <small class="">*Preenchimento obrigatório</small>
+                            <small class="fw-300">*Preenchimento obrigatório</small>
                         </div>
                     </div>
 
@@ -78,6 +78,7 @@
 <script>
     document.addEventListener("DOMContentLoaded", function () {
         $('#supportCentralModal select[name=topic]').select2({
+            // dropdownParent: $('#supportCentralModal .modal-dialog'),
             dropdownParent: $('#supportCentralModal'),
             minimumResultsForSearch: Infinity,
             placeholder: "*Quero falar sobre",

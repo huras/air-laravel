@@ -1,6 +1,6 @@
 <!-- Modal -->
 <div class="modal fade" id="supportCentralInicialModal" tabindex="-1" aria-labelledby="supportCentralInicialModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
         <div class="modal-content p-0 border-radius-0">
 
             <!-- Modal Header -->

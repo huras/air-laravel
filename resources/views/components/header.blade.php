@@ -79,7 +79,7 @@
                     </li>
                     <li class="nav-item">
                         {{-- Criar rota: Route::get('/contato', ...) --}}
-                        <a class="nav-link" href="#">Contato</a>
+                        <a class="nav-link" href="{{ route('contato') }}">Contato</a>
                     </li>
                 </ul>
 

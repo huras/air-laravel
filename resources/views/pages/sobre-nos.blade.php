@@ -54,7 +54,7 @@
             </div>
 
             <!-- Texto Institucional -->
-            <div class="row py-5 d-flex justify-content-center align-items-center left-topic-right-text">
+            <div class="row pt-122 d-flex justify-content-center align-items-center left-topic-right-text">
                 <div class="coluna-1 col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 mx-auto">
                     <h3> Criatividade <br> com propósito </h3>
                 </div>
@@ -65,7 +65,7 @@
             </div>
 
             <!-- Texto Institucional -->
-            <div class="row py-5 d-flex justify-content-center align-items-center left-topic-right-text">
+            <div class="row pt-122 d-flex justify-content-center align-items-center left-topic-right-text">
                 <div class="coluna-1 col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 mx-auto">
                     <h3> Colaboração <br> que constrói </h3>
                 </div>
@@ -76,7 +76,7 @@
             </div>
 
             <!-- Texto Institucional -->
-            <div class="row py-5 d-flex justify-content-center align-items-center left-topic-right-text">
+            <div class="row pt-122 d-flex justify-content-center align-items-center left-topic-right-text">
                 <div class="coluna-1 col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 mx-auto">
                     <h3> Ousadia <br> com precisão </h3>
                 </div>
@@ -87,7 +87,7 @@
             </div>
 
             <!-- Texto Institucional -->
-            <div class="row py-5 d-flex justify-content-center align-items-center left-topic-right-text">
+            <div class="row pt-122 d-flex justify-content-center align-items-center left-topic-right-text">
                 <div class="coluna-1 col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 mx-auto">
                     <h3> Encantamento <br> em cada entrega </h3>
                 </div>
@@ -98,7 +98,7 @@
             </div>
 
             <!-- Texto Institucional -->
-            <div class="row py-5 d-flex justify-content-center align-items-center left-topic-right-text">
+            <div class="row pt-122 d-flex justify-content-center align-items-center left-topic-right-text">
                 <div class="coluna-1 col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 mx-auto">
                     <h3> Comprometimento <br> com resultados </h3>
                 </div>
@@ -134,21 +134,21 @@
     <section class="pb-7 pt-5 text-black bg-white">
         <div class="container">
             <div class="row text-center mb-4">
-                <div class="col-lg-4 col-md-6 col-sm-12 mt-56">
+                <div class="col-lg-4 col-md-6 col-sm-12 mt-56 p-5">
                     <div class="mb-2 bg-light d-flex align-items-center justify-content-center">
                         <img src="{{ asset('images/equipe/rodrigo-soriano.png') }}" class="img-fluid">
                     </div>
                     <div class="fs-24 fw-400 mt-24">Rodrigo Soriano</div>
                     <p class="text-muted mt-16">CEO & Founder</p>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 mt-56">
+                <div class="col-lg-4 col-md-6 col-sm-12 mt-56 p-5">
                     <div class="mb-2 bg-light d-flex align-items-center justify-content-center">
                         <img src="{{ asset('images/equipe/fred.png') }}" class="img-fluid">
                     </div>
                     <div class="fs-24 fw-400 mt-24">Fred Muller</div>
                     <p class="text-muted mt-16">CRO</p>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 mt-56">
+                <div class="col-lg-4 col-md-6 col-sm-12 mt-56 p-5">
                     <div class="mb-2 bg-light d-flex align-items-center justify-content-center">
                         <img src="{{ asset('images/equipe/cassia-pascheto.png') }}" class="img-fluid">
                     </div>
@@ -156,21 +156,21 @@
                     <p class="text-muted mt-16">Comercial & CS</p>
                 </div>
 
-                <div class="col-lg-4 col-md-6 col-sm-12 mt-56">
+                <div class="col-lg-4 col-md-6 col-sm-12 mt-56 p-5">
                     <div class="mb-2 bg-light d-flex align-items-center justify-content-center">
                         <img src="{{ asset('images/equipe/cristiane-stuart.png') }}" class="img-fluid">
                     </div>
                     <div class="fs-24 fw-400 mt-24">Cristiane Stuart</div>
                     <p class="text-muted mt-16">Marketing</p>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 mt-56">
+                <div class="col-lg-4 col-md-6 col-sm-12 mt-56 p-5">
                     <div class="mb-2 bg-light d-flex align-items-center justify-content-center">
                         <img src="{{ asset('images/equipe/guilherme.png') }}" class="img-fluid">
                     </div>
                     <div class="fs-24 fw-400 mt-24">Guilherme Ferraz</div>
                     <p class="text-muted mt-16">CTO & PM</p>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 mt-56">
+                <div class="col-lg-4 col-md-6 col-sm-12 mt-56 p-5">
                     <div class="mb-2 bg-light d-flex align-items-center justify-content-center">
                         <img src="{{ asset('images/equipe/viviane.png') }}" class="img-fluid">
                     </div>
@@ -188,14 +188,14 @@
             </div>
         </div>
         <div class="container">
-            <div class="row w-100">
-                <div class="col-lg-11 col-md-12 d-flex flex-column justify-content-center text-start">
-                    <h1 class="fw-300"> Air Blog: Seu HUB de Marketing de Influência. </h1>
+            <div class="row w-100 px-0">
+                <div class="col-lg-12 col-md-12 d-flex flex-column justify-content-center text-start">
+                    <h1 class="fw-300 fs-120"> Air Blog: Sua biblioteca de Marketing de Influência. </h1>
                 </div>
             </div>
             <div class="row w-100">
                 <div class="col-lg-11 col-md-11 d-flex flex-column justify-content-center text-start mt-4">
-                    <p class="text-black mt-16 fw-300 line-height-1">
+                    <p class="text-muted-4b mt-16 fw-300 line-height-1">
                         <b class='fw-700'> Creators e Marcas, desvendem os segredos do sucesso agora! </b><br>
                         Insights, tendências e tudo que você precisa saber sobre o universo da influência! Não fique desatualizado! O futuro do Marketing de Influência passa por aqui!
                     </p>
