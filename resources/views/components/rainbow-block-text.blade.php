@@ -5,7 +5,7 @@
 ])
 
 <section class="py-5 text-white" style="background: linear-gradient(90deg, #fd75fd, #8efff7);">
-    <div class="container-fluid px-0 text-start">
+    <div class="container-fluid text-start">
         <div class="row">
             <div class="col-10 mx-auto">
                 <h3 class="fw-500 mb-5 text-black">{{ $title }}</h3>

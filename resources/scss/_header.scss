@@ -29,11 +29,11 @@
 }
 
 .header-container {
-    @media (max-width: 768px) {
-        flex-direction: column;
-        height: auto;
-        padding: 10px;
-    }
+    // @media (max-width: 768px) {
+    //     flex-direction: column;
+    //     height: auto;
+    //     padding: 10px;
+    // }
 }
 
 .home-hero-metrics{
@@ -42,5 +42,17 @@
             width: 100%!important;
             flex: unset;
         }
+    }
+}
+
+// ------------------
+
+nav {
+    &.bg-dark{
+        background-color: rgba(0, 0, 0, 0.6)!important;
+    }
+
+    &.bg-white{
+        background-color: #ffffffb8 !important;
     }
 }

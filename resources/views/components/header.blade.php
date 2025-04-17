@@ -1,4 +1,4 @@
-<nav class="navbar navbar-dark bg-dark" aria-label="air">
+<nav class="navbar navbar-dark bg-dark sticky-top z-3" aria-label="air">
     <div class="container-fluid px-4 header-container">
         <a class="navbar-brand" href="/">
             <svg width="77" height="45" viewBox="0 0 77 45" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -13,7 +13,7 @@
             </svg>
         </a>
 
-        <div class="d-flex flex-row justify-content-md-center header-buttons">
+        <div class="d-flex flex-row justify-content-md-center header-buttons mobile-hidden">
             <a href="#" class="btn btn-light" aria-label="Toggle navigation">
                 Plataforma AirSearch
             </a>
@@ -75,7 +75,7 @@
                     </li>
                     <li class="nav-item">
                         {{-- Criar rota: Route::get('/blog', ...) --}}
-                        <a class="nav-link" href="#">Blog</a>
+                        <a class="nav-link" target="_blank" href="https://airfluencers.com/blog/">Blog</a>
                     </li>
                     <li class="nav-item">
                         {{-- Criar rota: Route::get('/contato', ...) --}}

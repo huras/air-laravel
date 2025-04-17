@@ -3,38 +3,52 @@
 @section('title', 'Home')
 
 @section('content')
-    <section class="hero-section text-white bg-black">
-        <div class="container min-vh-100 d-flex align-items-center">
+    <section class="hero-section text-white bg-black pt-5 min-vh-100">
+        <div class="container">
             <div class="row w-100">
                 <div
-                    class="col-lg-6 col-md-12 d-flex flex-column justify-content-center text-center home-hero-wrapper mx-auto">
-                    <h1 class="fw-light home-hero-text">Nós</h1>
-                    <h1 class="fw-light home-hero-text-secondary">somos a.</h1>
+                    class="col-lg-4 col-md-12 d-flex flex-column justify-content-center text-center home-hero-wrapper mx-auto">
+                    <h2 class="fw-light home-hero-text">Nós</h2>
+                    <h2 class="fw-light home-hero-text-secondary">somos a.</h2>
                 </div>
-                <div class="col-lg-6 col-md-12 d-flex justify-content-center align-items-center home-hero-wrapper">
-                    <img src="{{ asset('images/air_logo_home.png') }}" alt="Air Logo Stroke" class="img-fluid hero-logo">
+                <div class="col-lg-8 col-md-12 px-0 d-flex justify-content-center align-items-center home-hero-wrapper">
+                    <img src="{{ asset('images/air_animado_home.gif') }}" alt="Air Logo Stroke" class="img-fluid hero-logo">
                 </div>
             </div>
         </div>
+
+        <section class="text-white bg-black d-flex justify-content-center align-items-center flex-column">
+            <p class='fs-16 fw-300'>Respire</p>
+            <svg width="25" height="13" viewBox="0 0 25 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M23.2647 0.291459L12.4989 10.6523L1.73306 0.291459C1.54071 0.105971 1.2825 0.00212646 1.01361 0.00212646C0.744732 0.00212646 0.486518 0.105971 0.294168 0.291459C0.201033 0.381551 0.127042 0.489085 0.0765298 0.607763C0.0260178 0.726441 0 0.853878 0 0.982608C0 1.11134 0.0260178 1.23877 0.0765298 1.35745C0.127042 1.47613 0.201033 1.58366 0.294168 1.67376L11.7471 12.6981C11.9483 12.8917 12.218 13 12.4989 13C12.7798 13 13.0495 12.8917 13.2507 12.6981L24.7036 1.67588C24.7974 1.58572 24.872 1.47793 24.9229 1.35885C24.9738 1.23978 25 1.11185 25 0.982608C25 0.853365 24.9738 0.725432 24.9229 0.60636C24.872 0.487289 24.7974 0.379491 24.7036 0.289331C24.5113 0.103843 24.2531 0 23.9842 0C23.7153 0 23.4571 0.103843 23.2647 0.289331V0.291459Z" fill="white"/>
+            </svg>
+        </section>
     </section>
 
-    <section class="hero-section text-white bg-black pt-5">
-        <div class="container-fluid px-0 d-flex align-items-center home-hero-imgs-wrapper">
-            <img src="{{ asset('images/home_bg_1.png') }}" alt="Air Logo Stroke" class="img-fluid w-100 hero-imgs-1">
-            <img src="{{ asset('images/home_bg_2.png') }}" alt="Air Logo Stroke" class="img-fluid pe-4 w-100 hero-imgs-2">
+    <section class=" text-white bg-black">
+        <div class="container px-0 ">
+            <div class="row w-100">
+                <div class="d-flex flex-column justify-content-center text-start half-below-text" style="transform: translateY(50%);">
+                    <h1 class="fw-light my-0 py-0">Respiramos</h1>
+                    <h1 class="fw-light my-0 py-0">influência.</h1>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid px-0 ">
 
-            {{-- <div class="container d-flex flex-column justify-content-center text-start">
-                <h2 class="fw-light">Respiramos</h2>
-                <h2 class="fw-light">influência.</h2>
-            </div> --}}
+            <div class="row w-100">
+                <img src="{{ asset('images/bumba.png') }}" alt="Air Logo Stroke" class="img-fluid w-100 hero-imgs-1">
+            </div>
+            {{-- <img src="{{ asset('images/home_bg_2.png') }}" alt="Air Logo Stroke" class="img-fluid pe-4 w-100 hero-imgs-2"> --}}
+
         </div>
     </section>
 
     <section class="hero-section text-white bg-black py-5">
         <div class="container py-5">
-            <div class="row text-center gy-4 home-hero-metrics">
-                <div class="col d-flex flex-column align-items-center justify-content-end">
-                    <img src="{{ asset('images/tiktok_marketing_partners.png') }}" alt="Air Logo Stroke" class="img-fluid">
+            <div class="row text-center gy-4 home-hero-metrics align-items-start">
+                <div class="col d-flex flex-column align-items-center justify-content-start">
+                    <img src="{{ asset('images/tiktok_marketing_partners.png') }}" alt="Air Logo Stroke" class="img-fluid mt-5">
                     <span class="metric-sub">Somos um dos principais parceiros de negócios da plataforma, provando que <span class="fw-800 text-white">criatividade não tem limites anos de mercado</span> </span>
                 </div>
                 <div class="col d-flex flex-column align-items-center justify-content-center">
@@ -86,7 +100,7 @@
             <div class="row g-4 pb-5">
                 <!-- Coluna 1 -->
                 <div class="col-12 col-lg-4 col-md-6 col-sm-12 px-4">
-                    <h5 class="fw-600">A gente cria. Ouve. Estuda. Analisa. Mede. Conecta.</h5>
+                    <h5 class="fw-600">A gente cria. Ouve. <br> Estuda. Analisa. <br> Mede. Conecta.</h5>
                     <p class="text-muted mt-3">
                         Fazemos com que marcas se conectem diretamente aos seus consumidores, trazendo para essa conversa, os criadores que mais transformam em conversão para as marcas.
                     </p>
@@ -94,7 +108,7 @@
 
                 <!-- Coluna 2 -->
                 <div class="col-12 col-lg-4 col-md-6 col-sm-12 px-4">
-                    <h5 class="fw-600">Aqui na AIR a gente acredita que criar impacto não é sorte — é método.</h5>
+                    <h5 class="fw-600">Aqui na AIR a gente acredita que criar impacto não é sorte: <br>é método.</h5>
                     <p class="text-muted mt-3">
                         A gente combina inteligência com criatividade. O resultado: Impacto garantido!
                     </p>
@@ -102,7 +116,7 @@
 
                 <!-- Coluna 3 -->
                 <div class="col-12 col-lg-4 col-md-6 col-sm-12 px-4 mx-auto">
-                    <h5 class="fw-600">Somos pioneiros. Somos inquietos.</h5>
+                    <h5 class="fw-600">Somos pioneiros. <br>Somos inquietos.</h5>
                     <p class="text-muted mt-3">
                         E para a gente, trazer os melhores resultados para nossas marcas, é tudo. Tudo mesmo.
                     </p>
@@ -111,14 +125,14 @@
         </div>
     </section>
 
-    <section class="py-5 bg-black text-white">
-        <div class="container py-5">
+    <section class="pb-5 pt-122 bg-black text-white">
+        <div class="container pb-5">
             <h3> Nossas soluções </h3>
             <p class="text-muted mt-3">
                 Reunimos especialistas para oferecer  criatividade disruptiva. Entregando integração com especialização profunda. É assim que nós fazemos.
             </p>
         </div>
-        <div class="container-fluid my-5 px-4">
+        <div class="container-fluid mb-5 pt-122 px-4">
             <!-- Bloco de introdução + comparação -->
             <div class="row">
 

@@ -6,7 +6,7 @@
     <section class="hero-section text-white bg-black">
         <div class="container-fluid py-5">
             <div class="row area-title-wrapper mt-5">
-                <p class="text-muted area-title-label">Cases</p>
+                <p class="text-muted area-title-label-3">Cases</p>
             </div>
         </div>
         <div class="container d-flex align-items-center">
@@ -89,43 +89,54 @@
         <div class="container">
             <div class="row">
                 <div class="col-4 mt-32">
-                    <a href="{{ route('cases-interna', ['case' => 'airbnb']) }}" class='external_cases_slot'>
+                    <a href="{{ route('cases-interna', ['case' => 'airbnb']) }}" class='external_cases_slot text-decoration-none'>
                         <img src="{{ asset('images/cases_externa/airbnb_bg.png') }}" class="img-fluid background">
+                        <div class='overlay'>
+                        </div>
                         <img src="{{ asset('images/cases_externa/airbnb_text.png') }}" class="img-fluid logo">
                     </a>
                 </div>
 
                 <div class="col-4 mt-32">
-                    <a href="{{ route('cases-interna', ['case' => 'catarina']) }}" class='external_cases_slot'>
+                    <a href="{{ route('cases-interna', ['case' => 'catarina']) }}" class='external_cases_slot text-decoration-none'>
                         <img src="{{ asset('images/cases_externa/catarina_bg.png') }}" class="img-fluid background">
-                        <img src="{{ asset('images/cases_externa/catarina_text.png') }}" class="img-fluid logo">
+                        <div class='overlay'></div>
+                        <img src="{{ asset('images/cases_externa/catarina_text.png') }}" class="img-fluid logo catarina">
                     </a>
                 </div>
 
                 <div class="col-4 mt-32">
-                    <a href="{{ route('cases-interna', ['case' => 'c6']) }}" class='external_cases_slot'>
+                    <a href="{{ route('cases-interna', ['case' => 'c6']) }}" class='external_cases_slot text-decoration-none'>
                         <img src="{{ asset('images/cases_externa/c6_bg.png') }}" class="img-fluid background">
+                        <div class='overlay'>
+                        </div>
                         <img src="{{ asset('images/cases_externa/c6_text.png') }}" class="img-fluid logo">
                     </a>
                 </div>
 
                 <div class="col-4 mt-32">
-                    <a href="{{ route('cases-interna', ['case' => 'fgv']) }}" class='external_cases_slot'>
+                    <a href="{{ route('cases-interna', ['case' => 'fgv']) }}" class='external_cases_slot text-decoration-none'>
                         <img src="{{ asset('images/cases_externa/fgv_bg.png') }}" class="img-fluid background">
+                        <div class='overlay'>
+                        </div>
                         <img src="{{ asset('images/cases_externa/fgv_text.png') }}" class="img-fluid logo">
                     </a>
                 </div>
 
                 <div class="col-4 mt-32">
-                    <a href="{{ route('cases-interna', ['case' => 'swift']) }}" class='external_cases_slot'>
+                    <a href="{{ route('cases-interna', ['case' => 'swift']) }}" class='external_cases_slot text-decoration-none'>
                         <img src="{{ asset('images/cases_externa/swift_bg.png') }}" class="img-fluid background">
+                        <div class='overlay'>
+                        </div>
                         <img src="{{ asset('images/cases_externa/swift_text.png') }}" class="img-fluid logo">
                     </a>
                 </div>
 
                 <div class="col-4 mt-32">
-                    <a href="{{ route('cases-interna', ['case' => 'tiktok']) }}" class='external_cases_slot'>
+                    <a href="{{ route('cases-interna', ['case' => 'tiktok']) }}" class='external_cases_slot text-decoration-none'>
                         <img src="{{ asset('images/cases_externa/tiktok_bg.png') }}" class="img-fluid background">
+                        <div class='overlay'>
+                        </div>
                         <img src="{{ asset('images/cases_externa/tiktok_text.png') }}" class="img-fluid logo">
                     </a>
                 </div>
@@ -140,3 +151,4 @@
 
 @section('footer-bg-theme', 'bg-black')
 @section('footer-text-theme', 'text-white')
+@section('footer-svg-fill', 'white')

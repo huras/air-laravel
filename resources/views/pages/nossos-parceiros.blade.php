@@ -234,3 +234,4 @@
 
 @section('footer-bg-theme', 'bg-white')
 @section('footer-text-theme', 'text-black')
+@section('footer-svg-fill', 'white')
